@@ -1,0 +1,94 @@
+/* 
+.container
+.card
+.btn
+.grid
+.flex
+.text-align-center
+img
+margin
+padding
+*/
+
+
+/* Custom Properties */
+:root {
+    --white: #FFFFFF;
+    --pink: #E02C6D;
+}
+
+/* Container */
+
+.container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Flex */
+
+.flex {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Card */
+.card {
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Button */
+
+.btn {
+    margin-top: 27px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--pink);
+    padding: 10px 24px;
+}
+.btn span {
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+/* Margin */
+
+.mtb-10 {
+    margin: 10px 0;
+}
+.mtb-20 {
+    margin: 20px 0;
+}
+.mtb-50 {
+    margin: 50px 0;
+} 
+.mt-70 {
+    margin-top: 70px;
+}
+
+/* Font Size */
+
+.f-18 {
+    font-size: 18px;
+}
+
+/* padding */
+
+.ptb-20 {
+    padding: 20px 0 30px;
+}
+
+/* text-alignment */
+
+.ta-c {
+    text-align: center;
+}
