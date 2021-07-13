@@ -72,6 +72,22 @@ h2 {
     height: 100%;
 }
 
+/* Upcoming Matches */
+
+.matches .grid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+}
+.matches .card {
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 12%;
+}
+.vs {
+    font-size: 45px;
+    font-weight: bold;
+    color: #2d25a0;
+}
+
 /* Footer */
 
 footer .flex {
