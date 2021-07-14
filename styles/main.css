@@ -117,6 +117,8 @@ footer .flex {
 .footer-logo {
     width: 483px;
     height: 110px;
+}
+.footer-logo img {
     margin: 0 auto;
 }
 .social-icons a {
