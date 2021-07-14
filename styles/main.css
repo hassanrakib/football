@@ -133,8 +133,7 @@ footer .flex {
 /* Media Queries (Mobile) */
 
 @media only screen and (max-width: 500px) {
-  
-    /* Banner */
+  /* Banner */
 
   .banner .flex {
     flex-direction: column;

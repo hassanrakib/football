@@ -37,7 +37,7 @@
 /* Button */
 
 .btn {
-    display: inline-block;
+  display: inline-block;
   text-decoration: none;
   color: var(--white);
   background-color: var(--pink);
@@ -45,9 +45,9 @@
   transition: transform 0.2s, background-color 0.3s, color 0.3s;
 }
 .btn:hover {
-    transform: scale(0.9);
-    background-color: var(--white);
-    color: var(--pink);
+  transform: scale(0.9);
+  background-color: var(--white);
+  color: var(--pink);
 }
 .btn span {
   font-weight: 500;
