@@ -123,14 +123,14 @@ footer .flex {
   margin: 0 14px;
   width: 32px;
   height: 32px;
-  padding: 10px;
+  padding: 5px;
   color: gray;
   background-color: rgba(128, 128, 128, 0.151);
   border-radius: 50%;
   text-align: center;
 }
 
-/* Media Queries */
+/* Media Queries (Mobile) */
 
 @media only screen and (max-width: 500px) {
   
@@ -181,7 +181,7 @@ footer .flex {
 
   .social-icons a {
     font-size: 18px;
-    padding: 5px;
+    margin: 0 12px;
   }
   footer .social-icons {
     margin: 50px 0 20px 0;
