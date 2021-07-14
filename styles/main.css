@@ -117,7 +117,6 @@ footer .flex {
 .footer-logo {
     width: 483px;
     height: 110px;
-    align-self: center;
 }
 .social-icons a {
     display: inline-block;
@@ -188,9 +187,10 @@ footer .flex {
     footer .social-icons {
         margin: 50px 0 20px 0;
     }
-    .footer-logo img {
-        width: 60%;
+    footer img {
+        width: 75%;
     }
+
 }
 
 
