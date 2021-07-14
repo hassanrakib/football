@@ -82,6 +82,12 @@ h2 {
     border-bottom-left-radius: 12%;
     border-bottom-right-radius: 12%;
 }
+.country {
+    flex-basis: 35%;
+}
+.country h3 {
+    font-size: 25px;
+}
 .vs {
     font-size: 45px;
     font-weight: bold;
