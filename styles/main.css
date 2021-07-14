@@ -10,6 +10,10 @@ h2 {
     font-size: 40px;
 }
 
+img {
+    width: 100%;
+}
+
 /* Banner */
 
 .banner {
@@ -23,7 +27,7 @@ h2 {
     font-weight: bold;
     margin-bottom: 27px; /* try it as utility */
 }
-.banner-image img {
+.banner-image{
     width: 556px;
     height: 438px;
 }
@@ -88,6 +92,10 @@ h2 {
 .country h3 {
     font-size: 25px;
 }
+.country-flag {
+    width: 96px;
+    height: 96px;
+}
 .vs {
     font-size: 45px;
     font-weight: bold;
@@ -114,4 +122,19 @@ footer .flex {
     background-color: rgba(128, 128, 128, 0.151);
     border-radius: 50%;
     text-align: center;
+}
+
+/* Media Queries */
+
+
+
+@media only screen and (max-width: 1200px) {
+    /*  */
+    /* Players */
+
+    .players .grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
 }
