@@ -1,196 +1,192 @@
-
-/* Body */
-
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
-header, main, footer {
-    max-width: 1440px;
-    margin: 0 auto;
+header,
+main,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 /* Banner */
 
 .banner {
-    background-color: #2D25A0;
-    height: 591px;
+  background-color: #2d25a0;
+  height: 591px;
 }
 .banner-text {
-    flex-basis: 60%;
+  flex-basis: 60%;
 }
 .banner-title {
-    color: var(--white);
-    font-size: 64px;
-    line-height: 80px;
-    font-weight: bold;
-    margin-bottom: 27px; /* try it as utility */
+  color: var(--white);
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: bold;
+  margin-bottom: 27px; /* try it as utility */
 }
-.banner img{
-    width: 556px;
-    height: 438px;
+.banner img {
+  width: 556px;
+  height: 438px;
 }
 
 /* Players Section */
 
 .players .grid {
-    grid-column-gap: 30px;
-    grid-row-gap: 27px;
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
 }
 .player-card {
-    max-width: 300px;
+  max-width: 300px;
 }
 .player-card img {
-    width: 300px;
-    height: 256px;
+  width: 300px;
+  height: 256px;
 }
 .player-name {
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 40px;
-    color: #18191F;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #18191f;
 }
 .player-detail {
-    color: #6C6C6C;
-    line-height: 26px;
+  color: #6c6c6c;
+  line-height: 26px;
 }
 
 /* Featured Videos */
 
 .videos {
-    color: var(--white);
-    background-color: #2d25a0;
+  color: var(--white);
+  background-color: var(--blue);
 }
 .videos .grid {
-    height: 400px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
+  height: 400px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 .videos .grid iframe:first-child {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
 }
 .videos iframe {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* Upcoming Matches */
 
 .matches .grid {
-    grid-template-columns: 1fr;
-    grid-row-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
 }
 .matches .card {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 .country {
-    flex-basis: 35%;
+  flex-basis: 35%;
 }
 .country h3 {
-    font-size: 25px;
+  font-size: 25px;
 }
 .country-flag {
-    width: 96px;
-    height: 96px;
+  width: 96px;
+  height: 96px;
 }
 .vs {
-    font-size: 45px;
-    font-weight: bold;
-    color: #2d25a0;
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--blue);
 }
 
 /* Footer */
 
 footer .flex {
-    flex-direction: column;
+  flex-direction: column;
 }
 .footer-logo {
-    width: 483px;
-    height: 110px;
+  width: 483px;
+  height: 110px;
 }
 .social-icons a {
-    display: inline-block;
-    font-size: 20px;
-    margin: 0 14px;
-    width: 32px;
-    height: 32px;
-    padding: 10px;
-    color: gray;
-    background-color: rgba(128, 128, 128, 0.151);
-    border-radius: 50%;
-    text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 14px;
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  color: gray;
+  background-color: rgba(128, 128, 128, 0.151);
+  border-radius: 50%;
+  text-align: center;
 }
 
 /* Media Queries */
 
 @media only screen and (max-width: 500px) {
-    
+  
     /* Banner */
 
-    .banner .flex {
-        flex-direction: column;
-    }
-    .banner {
-        height: 629px;
-    }   
-    .banner-title {
-        font-size: 36px;
-        line-height: 50px;
-        margin-bottom: 30px;
-    }
-    .banner img {
-        width: 329px;
-        height: 259px;
-        margin: 52px 0 59px 0;
-    }
+  .banner .flex {
+    flex-direction: column;
+  }
+  .banner {
+    height: 629px;
+  }
+  .banner-title {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .banner img {
+    width: 329px;
+    height: 259px;
+    margin: 52px 0 59px 0;
+  }
 
-    /* Players */
+  /* Players */
 
-    .players .grid {
-        grid-template-columns: 1fr;
-        grid-row-gap: 24px;
-    }
+  .players .grid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+  }
 
-    /* Videos */
+  /* Videos */
 
-    .videos .grid {
-        grid-template-columns: 1fr;
-        height: auto;
-    }
-    .videos .grid iframe:first-child {
-        grid-column: auto;
-        grid-row: auto;
-    }
+  .videos .grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .videos .grid iframe:first-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
 
-    /* Matches */
+  /* Matches */
 
-    .matches .flex {
-        flex-direction: column;
-    }
+  .matches .flex {
+    flex-direction: column;
+  }
 
-    /* Footer */
+  /* Footer */
 
-    .social-icons a {
-        font-size: 20px;
-        padding: 4px;
-    }
-    footer .social-icons {
-        margin: 50px 0 20px 0;
-    }
-    footer img {
-        width: 75%;
-    }
-
+  .social-icons a {
+    font-size: 18px;
+    padding: 5px;
+  }
+  footer .social-icons {
+    margin: 50px 0 20px 0;
+  }
+  footer img {
+    width: 75%;
+  }
 }
-
-
