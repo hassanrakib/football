@@ -4,6 +4,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    max-width: 1440px;
 }
 
 h2 {
@@ -30,7 +31,7 @@ img {
     font-weight: bold;
     margin-bottom: 27px; /* try it as utility */
 }
-.banner-image{
+.banner img{
     width: 556px;
     height: 438px;
 }
@@ -113,6 +114,7 @@ footer .flex {
 .footer-logo {
     width: 483px;
     height: 110px;
+    margin: 0 auto;
 }
 .social-icons a {
     display: inline-block;
@@ -129,63 +131,63 @@ footer .flex {
 
 /* Media Queries */
 
-
-
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 500px) {
     
+    /* Banner */
+
+    .banner .flex {
+        flex-direction: column;
+    }
+    .banner {
+        height: 629px;
+    }   
+    .banner-title {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    .banner img {
+        width: 329px;
+        height: 259px;
+        margin: 52px 0 59px 0;
+    }
+
     /* Players */
 
     .players .grid {
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
     }
 
-}
-@media only screen and (max-width: 1105px) {
-    .banner .container {
-        width: 95%;
+    /* Videos */
+
+    .videos .grid {
+        grid-template-columns: 1fr;
+        height: auto;
     }
-}
-@media only screen and (max-width: 988px) {
-    .banner-title {
-        font-size: 50px;
-    }
-}
-@media only screen and (max-width: 840px) {
-    .banner-title {
-        font-size: 45px;
-    }
-    h2 {
-        font-size: 35px;
-    }
-    .player-name {
-        font-size: 20px;
-    }
-    .vs {
-        font-size: 30px;
-    }
-    .banner-image img {
-        width: 90%;
-        position: relative;
-        left: 35px;
-        top: 75px;
+    .videos .grid iframe:first-child {
+        grid-column: auto;
+        grid-row: auto;
     }
 
-}
-@media only screen and (max-width: 784px) {
-    .banner-title {
-        font-size: 35px;
+    /* Matches */
+
+    .matches .flex {
+        flex-direction: column;
     }
-    h2 {
-        font-size: 25px;
-    }
-    .player-name {
-        font-size: 19px;
-    }
-    .vs {
+
+    /* Footer */
+
+    .social-icons a {
         font-size: 20px;
+        padding: 4px;
     }
-    .matches h3 {
-        font-size: 17px;
+    footer .social-icons {
+        margin: 50px 0 20px 0;
+    }
+    .footer-logo img {
+        width: 60%;
     }
 }
+
+
